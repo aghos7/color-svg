@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link href="https://rawgithub.com/aghos7/color-svg/master/dist/css/color-svg.css" media="screen" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,6 +35,11 @@
 <p>ColorSVG is a new way to allow your users to select color. It hails from the age old tradition of color wheels, but
 gives an exciting new twist using 100% SVG graphics. If focuses on easily providing a rich set of colors for your
 users to easily select, which allows you to get back to business.</p>
+
+<a name="demo"></a>
+<h3>Demo</h3>
+
+<p><input type="text" class="color-picker" /></p>
 
 <h3>
 <a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementation</h3>
@@ -77,6 +83,10 @@ gulp
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="https://rawgithub.com/aghos7/color-svg/master/dist/js/vendor/dependencies.min.js"></script>
+    <script src="https://rawgithub.com/aghos7/color-svg/master/dist/js/color-svg.js"></script>
+    <script type="text/javascript">
+      ColorSVG.init('.color-picker');
+    </script>
   </body>
 </html>
